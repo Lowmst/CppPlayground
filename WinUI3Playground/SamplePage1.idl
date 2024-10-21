@@ -1,0 +1,9 @@
+namespace WinUI3Playground
+{
+    [default_interface]
+    runtimeclass SamplePage1 : Microsoft.UI.Xaml.Controls.Page
+    {
+        SamplePage1();
+        Int32 MyProperty;
+    }
+}
