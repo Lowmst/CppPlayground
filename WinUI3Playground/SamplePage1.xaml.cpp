@@ -22,8 +22,8 @@ namespace winrt::WinUI3Playground::implementation
         throw hresult_not_implemented();
     }
 
-    void SamplePage1::myButton_Click(IInspectable const&, RoutedEventArgs const&)
+    /*void SamplePage1::myButton_Click(IInspectable const&, RoutedEventArgs const&)
     {
         myButton().Content(box_value(L"Clicked"));
-    }
+    }*/
 }

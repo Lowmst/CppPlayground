@@ -21,6 +21,7 @@ namespace winrt::WinUI3Playground::implementation
         //void NaviSelection(IInspectable const& sender, Microsoft::UI::Xaml::RoutedEventArgs const& args);
         void MainNavigation_SelectionChanged(winrt::Microsoft::UI::Xaml::Controls::NavigationView const& sender, winrt::Microsoft::UI::Xaml::Controls::NavigationViewSelectionChangedEventArgs const& args);
         void MainNavigation_BackRequested(winrt::Microsoft::UI::Xaml::Controls::NavigationView const& sender, winrt::Microsoft::UI::Xaml::Controls::NavigationViewBackRequestedEventArgs const& args);
+        void contentFrame_SizeChanged(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::SizeChangedEventArgs const& e);
     };
 }
 

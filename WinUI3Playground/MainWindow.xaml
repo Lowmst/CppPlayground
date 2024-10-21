@@ -16,28 +16,25 @@
             x:Name="MainNavigation"
             SelectionChanged="MainNavigation_SelectionChanged"
             BackRequested="MainNavigation_BackRequested"
-            IsBackEnabled="True">
+            IsBackEnabled="True"
+        >
         <NavigationView.MenuItems>
             <NavigationViewItem Content="SamplePage1"/>
             <NavigationViewItem Content="SamplePage2"/>
         </NavigationView.MenuItems>
 
 
-        <Grid>
+        <Grid x:Name="grid">
 
             <!-- Frame内容 -->
-            <Frame x:Name="contentFrame" Grid.Row="0"/>
+            <Frame x:Name="contentFrame" Grid.Row="0" SizeChanged="contentFrame_SizeChanged"/>
 
             <!-- 底部的bar条 -->
-            <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,0,0,0" Height="100">
+            <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,0,0,0" Height="100"  Background="{ThemeResource SystemControlAcrylicWindowBrush}" x:Name="bar">
                 <!-- 底部的bar条，使用Acrylic效果 -->
-                <Border HorizontalAlignment="Stretch" 
-                        VerticalAlignment="Bottom"
-                        Background="{ThemeResource SystemControlAcrylicWindowBrush}" 
-                        Height="100"
-                        Width="{Binding ActualWidth, ElementName=contentFrame}">
-                    <TextBlock Text="This is an acrylic bar" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-                </Border>
+
+                <TextBlock Text="{Binding Width, ElementName=bar}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+
              </Canvas>
         </Grid>
     </NavigationView>

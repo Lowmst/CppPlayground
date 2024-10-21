@@ -65,4 +65,13 @@ namespace winrt::WinUI3Playground::implementation
 		NavigatedList.pop_back();
 		NavigatedList.pop_back();
 	}
+
+	void MainWindow::contentFrame_SizeChanged(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::SizeChangedEventArgs const& e)
+	{
+		bar().Width(contentFrame().ActualWidth());
+	}
+
+
+
 }
+
