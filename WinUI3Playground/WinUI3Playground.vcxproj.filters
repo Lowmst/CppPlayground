@@ -40,6 +40,12 @@
     <Image Include="Assets\LockScreenLogo.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="Assets\cover.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\cover2.jpg">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Assets">
@@ -57,5 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
   </ItemGroup>
 </Project>

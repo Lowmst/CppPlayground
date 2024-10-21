@@ -11,5 +11,6 @@
 
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button x:Name="myButton" Click="myButton_Click">Click Me 1</Button>
+        <Image Source="/Assets/cover.jpg"/>
     </StackPanel>
 </Page>

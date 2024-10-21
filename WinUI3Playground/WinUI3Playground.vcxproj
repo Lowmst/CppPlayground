@@ -173,6 +173,8 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\cover.jpg" />
+    <Image Include="Assets\cover2.jpg" />
     <Image Include="Assets\LockScreenLogo.scale-200.png" />
     <Image Include="Assets\SplashScreen.scale-200.png" />
     <Image Include="Assets\Square150x150Logo.scale-200.png" />
